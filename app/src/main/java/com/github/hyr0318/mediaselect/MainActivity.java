@@ -11,12 +11,13 @@ import com.github.hyr0318.mediaselect_library.Constans.MediaType;
 import com.github.hyr0318.mediaselect_library.ui.MediaSelectActivity;
 import com.github.hyr0318.mediaselect_library.ui.Photo;
 import com.github.hyr0318.mediaselect_library.widget.SelectDialog;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity
     implements SelectDialog.OnTakeAudioClickListener, SelectDialog.OnTakePicClickListener,
     SelectDialog.OnTakeVideoClickListener, SelectDialog.OnCancleClickListener {
-    List<Photo> mediaList ;
+    List<Photo> mediaList = new ArrayList<>();
     private SelectDialog selectDialog;
     private MediaAdapter mediaAdapter;
 
@@ -33,7 +34,6 @@ public class MainActivity extends AppCompatActivity
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
         mediaAdapter = new MediaAdapter(getApplicationContext(), mediaList);
-
 
         recyclerView.setLayoutManager(layoutManager);
 
@@ -78,12 +78,14 @@ public class MainActivity extends AppCompatActivity
 
     @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        if(requestCode == Constans.REQUEST_CODE){
-            mediaList = (List<Photo>) data.getSerializableExtra(Constans.RESULT_LIST);
+        if (requestCode == Constans.REQUEST_CODE) {
+            if (null != data) {
+                mediaList = (List<Photo>) data.getSerializableExtra(Constans.RESULT_LIST);
 
-            mediaAdapter.setMediaList(mediaList);
+                mediaAdapter.setMediaList(mediaList);
 
-            mediaAdapter.notifyDataSetChanged();
+                mediaAdapter.notifyDataSetChanged();
+            }
 
         }
         super.onActivityResult(requestCode, resultCode, data);
