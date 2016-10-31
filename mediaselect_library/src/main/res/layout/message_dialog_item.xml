@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/msg_content"
+            style="@style/title_16_black_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:padding="10dip"
+            android:paddingLeft="10dip"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="20dip"
+            android:background="@color/menu_normal_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/msg_cancle_btn"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/right_corners_half_normalbtn"
+                android:gravity="center"
+                android:text="@string/message_cancle"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/menu_normal_color"/>
+
+            <Button
+                android:id="@+id/msg_ok_btn"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/left_corners_half_normalbtn"
+                android:gravity="center"
+                android:text="@string/message_ok"
+                android:textColor="#028CE5"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="actionBarSize">48dip</dimen>
+    <dimen name="item_photo_size">80dip</dimen>
+    <dimen name="item_camera_size">80dip</dimen>
+    <dimen name="qrcode_max_hight">480dp</dimen>
+    <dimen name="qrcode_max_width">480dp</dimen>
+    <dimen name="title_height">44dp</dimen>
+    <dimen name="pading_left">10dp</dimen>
+    <dimen name="image_size">65dp</dimen>
+    <dimen name="waver_width">2dp</dimen>
+    <dimen name="waver_width_min">1dp</dimen>
+</resources>

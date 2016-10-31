@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_item_bg_p">#f7f7f7</color>
+    <color name="menu_normal_color">#EFEEF3</color>
+    <color name="title_bg">#028CE5</color>
+    <color name="wave_bg">#0e152b</color>
+    <color name="pager_bg">#CA000000</color>
+</resources>

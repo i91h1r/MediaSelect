@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_photos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ok_btn_layout"
+        android:gravity="center"/>
+
+
+    <RelativeLayout
+        android:id="@+id/ok_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#02baff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/show_select_count"
+                android:layout_width="28dip"
+                android:layout_height="28dip"
+                android:background="@drawable/cricle_bg"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="5"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/ok_btn"
+                style="@style/title_16_withe_style"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="@string/ok_btn_txt"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

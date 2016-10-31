@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/title_bg"
+        >
+
+        <LinearLayout
+            android:id="@+id/close_layout"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/photo_close_btn"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:background="@mipmap/nav_guanbi"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/media_title"
+            style="@style/title_18_withe_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/please_select_pic"/>
+
+        <Button
+            android:id="@+id/goto_takepic"
+            style="@style/white_14_style"
+            android:layout_width="70dip"
+            android:layout_height="38dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/corners_rectangle_blue_solid"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="3dip"
+            android:text="@string/go_to_takepic"/>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <FrameLayout
+            android:id="@+id/medioSelectFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

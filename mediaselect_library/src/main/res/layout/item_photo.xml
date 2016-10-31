@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.hyr0318.mediaselect_library.widget.SquareItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/photo_bg"
+        android:padding="1dip"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:id="@+id/select_layout"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right|top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/v_selected"
+            android:layout_width="18dip"
+            android:layout_height="18dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/photo_selectbox_bg"
+            android:clickable="true"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/vedio_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:background="@mipmap/icon_shipin"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/vedio_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:padding="5dip"
+        android:textColor="#ffffff"
+        android:textSize="12sp"/>
+
+</com.github.hyr0318.mediaselect_library.widget.SquareItemLayout>

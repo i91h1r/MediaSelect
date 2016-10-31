@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">mediaselect_library</string>
+    <string name="take_pic_txt">相册</string>
+    <string name="take_vedio_txt">小视频</string>
+    <string name="take_audio_txt">音频</string>
+    <string name="cancle_txt">取消</string>
+    <string name="please_select_pic">选择图片</string>
+    <string name="go_to_takepic">拍照</string>
+    <string name="please_select_vedio">选择视频</string>
+    <string name="go_to_vedio">录制视频</string>
+    <string name="please_select_audio">选择音频</string>
+    <string name="go_to_audio">录制音频</string>
+    <string name="ok_btn_txt">确认</string>
+    <string name="all_image">所有图片</string>
+    <string name="delete_tips">正在删除资源，请稍后...</string>
+    <string name="over_max_count_tips">你最多可以选择%1$d个媒体资源</string>
+    <string name="message_cancle">否</string>
+    <string name="message_ok">是</string>
+    <string name="delete_select_file">是否删除选中文件！</string>
+    <string name="audio_start_txt">开始录音</string>
+    <string name="audio_init_txt">00：00：00</string>
+    <string name="audio_recording_txt">开始录音</string>
+    <string name="save_audio_tip">正在保存音频，请稍后...</string>
+    <string name="audio_finish_txt">完成录音</string>
+</resources>
