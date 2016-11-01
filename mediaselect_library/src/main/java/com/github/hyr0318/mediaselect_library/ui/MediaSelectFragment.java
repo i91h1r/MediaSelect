@@ -52,7 +52,7 @@ import static com.github.hyr0318.mediaselect_library.utils.MediaStoreHelper.INDE
  * Author：hyr on 2016/10/28 16:25
  * Email：2045446584@qq.com
  */
-@SuppressLint("ValidFragment") public class MediaSelectFragment extends Fragment
+@SuppressLint("ValidFragment") @SuppressWarnings("deprecation") public class MediaSelectFragment extends Fragment
     implements View.OnClickListener {
     private ImageCaptureManager captureManager;
     private Context mContext;
@@ -118,7 +118,7 @@ import static com.github.hyr0318.mediaselect_library.utils.MediaStoreHelper.INDE
 
         maxCount = getActivity().getIntent().getIntExtra(EXTRA_MAX_COUNT, DEFAULT_MAX_COUNT);
 
-        selectPhoto = (List<Photo>) getActivity().getIntent().getSerializableExtra(SELECT_PHOTOS);
+        selectPhoto = getActivity().getIntent().getParcelableArrayListExtra(SELECT_PHOTOS);
 
         showSelectPCount = (TextView) rootView.findViewById(R.id.show_select_count);
 

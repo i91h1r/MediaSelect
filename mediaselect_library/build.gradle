@@ -14,8 +14,6 @@ android {
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -35,3 +33,8 @@ dependencies {
 }
 apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
 
+android {
+    lintOptions {
+        abortOnError false
+    }
+}

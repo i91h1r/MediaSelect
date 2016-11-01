@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity
 
         if (requestCode == Constans.REQUEST_CODE) {
             if (null != data) {
-                mediaList = (List<Photo>) data.getSerializableExtra(Constans.RESULT_LIST);
+                mediaList =  data.getParcelableArrayListExtra(Constans.RESULT_LIST);
 
                 mediaAdapter.setMediaList(mediaList);
 
